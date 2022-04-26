@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+    --font-manrope: 'Manrope', sans-serif;
+}
+
+* {
+    font-family: var(--font-manrope);
+    color: var(--text-color);
+}
+
+body {
+    background: url("assets/blur-2.png"), url("assets/blur-1.png"), var(--background); 
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header p {
+    color: var(--background);
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.menu > a:hover {
+    color: var(--button);
+    font-weight: 400;
+    
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2px solid var(--button);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+
+}
+.button:hover {
+    background-color: var(--button);
+    font-weight: 600;
+
+}
+
+header > a.logo {
+    width: 0px;
+    height: auto;
+}
+
+main {
+    margin: auto;
+    min-width: 300;
+    max-width: 1000;
+    font-size: 3em;
+    text-align: center;
+}
+
+main > h1 {
+    font-weight: 700;
+    margin: 0px 0px;
+    padding-top: 20px;
+}
+
+main h1.stroke {
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 700;
+    -webkit-text-stroke: 2px var(--button);
+    padding-top: 0px;
+}
+
+div.coffee{
+    padding-top: 130px;
+    margin: 0px;   
+}
+
+
+
+    
+
+
